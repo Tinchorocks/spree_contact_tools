@@ -1,0 +1,6 @@
+ 
+<% if can? :admin, Spree::User %>
+  <ul class="nav nav-sidebar border-bottom">
+    <%= main_menu_tree Spree::User, icon: 'user', url: '#sidebar-user', sub_menu: 'users', label: plural_resource_name(Spree::User) %>
+  </ul>
+<% end %>

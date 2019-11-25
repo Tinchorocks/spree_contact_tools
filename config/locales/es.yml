@@ -15,7 +15,7 @@ en:
         message: Mensaje
         send: Enviar
         success_msg: ¡Mensaje enviado correctamente! 
-        bach_home: Volver al inicio
+        back_home: Volver al inicio
         email_subject: Nuevo contacto
         email_message: Mensaje
         email_user: Nombre y apellido
@@ -32,3 +32,6 @@ en:
           Message: Mensaje
       newsletters:
         title: Newsletter
+      users: 
+        admin:
+          users: Usuarios

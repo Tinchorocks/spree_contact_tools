@@ -1,3 +1,5 @@
+require 'csv'
+
 module Spree
   class Contact < Spree::Base
     include ActiveModel::Conversion

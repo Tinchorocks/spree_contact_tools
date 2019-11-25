@@ -15,7 +15,7 @@ en:
         message: Your message
         send: Send
         success_msg: ¡Message sended succesfully! 
-        bach_home: Go back to home
+        back_home: Go back to home
         email_subject: New contact
         email_message: Message
         email_user: User
@@ -32,3 +32,6 @@ en:
           Message: Message
       newsletters:
         title: Newsletter
+      users: 
+        admin:
+          users: Users
