@@ -1,12 +1,12 @@
 # SpreeContactTools
 
-Introduction goes here.
+Provides Contact & Newsletter modules for Spree Ecommerce v4.0.
 
 ## Installation
 
 1. Add this extension to your Gemfile with this line:
   ```ruby
-  gem 'spree_contact_tools', github: '[your-github-handle]/spree_contact_tools'
+  gem 'spree_contact_tools', github: 'Tinchorocks/spree_contact_tools'
   ```
 
 2. Install the gem using Bundler:
@@ -46,4 +46,4 @@ If you'd like to contribute, please take a look at the
 [instructions](CONTRIBUTING.md) for installing dependencies and crafting a good
 pull request.
 
-Copyright (c) 2019 [name of extension creator], released under the New BSD License
+Copyright (c) 2019 Tinchorocks, released under the New BSD License
