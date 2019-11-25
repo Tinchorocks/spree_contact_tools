@@ -4,6 +4,7 @@
 en:
   spree:
     contact_tools:
+      contact: Contact
       contacts:
         title: Contact
         instructions: Please, fill the next fields and press Send.
@@ -20,5 +21,14 @@ en:
         email_user: User
         email_email: Email
         email_phone: Phone
+        admin:
+          contacts: Contacts
+          title: Contacts
+          export: Export
+          email: Email
+          firstname: Firstname
+          Lastname: Lastname
+          Phone: Phone
+          Message: Message
       newsletters:
         title: Newsletter

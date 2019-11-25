@@ -21,5 +21,14 @@ module Spree
     def deliver_email
       Spree::ContactToolsMailer.contact_email(self).deliver_now
     end
+
+    def self.to_csv
+      CSV.generate(headers: true) do |csv|
+        csv << [Spree.t('contact_tools.contacts.email'), Spree.t('contact_tools.contacts.firstname'), Spree.t('contact_tools.contacts.lastname'), Spree.t('contact_tools.contacts.phone'), Spree.t('contact_tools.contacts.message')]
+        all.each do |contact|
+          csv << [contact.email, contact.firstname, contact.lastname, contact.phone, contact.message]
+        end
+      end
+    end
   end
 end

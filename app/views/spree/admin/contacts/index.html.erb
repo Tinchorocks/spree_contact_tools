@@ -1,0 +1,40 @@
+<% content_for :page_title do %>
+  <%= Spree.t('contact_tools.contacts.admin.title') %>
+<% end %>
+
+<% content_for :page_actions do %>
+	<%= button_link_to Spree.t('contact_tools.contacts.admin.export'), admin_contacts_path(format: :csv), id: 'btn-export', class: "btn-primary", icon: 'export' %>
+<% end %>
+
+<% if @contacts.any? %>
+	<table class='table sortable'>
+		<thead>
+			<tr data-hook='option_header'>
+				<th><%= Spree.t('contact_tools.contacts.admin.email') %></th>
+				<th><%= Spree.t('contact_tools.contacts.admin.firstname') %></th>
+				<th><%= Spree.t('contact_tools.contacts.admin.lastname') %></th>
+				<th><%= Spree.t('contact_tools.contacts.admin.phone') %></th>
+				<th><%= Spree.t('contact_tools.contacts.admin.message') %></th>
+				<th class='actions'></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @contacts.each do |contact| %>
+				<tr class="spree_contact <%= cycle('odd', 'even')%>" id='<%= spree_dom_id contact %>' data-hook='contact-row'>
+					<td><%= contact.email %></td>
+					<td><%= contact.firstname %></td>
+					<td><%= contact.lastname %> </td>
+					<td><%= contact.phone %> </td>
+					<td><%= contact.message %> </td>
+					<td class='actions actions-2 text-right'>
+						<%= link_to_delete(contact, no_text: true) %>
+					</td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+<% else %>
+  <div class='alert alert-info no-objects-found'>
+    <%= Spree.t(:no_resource_found, resource: Spree.t('contact_tools.contacts.admin.contacts')) %>.
+  </div>
+<% end %>
