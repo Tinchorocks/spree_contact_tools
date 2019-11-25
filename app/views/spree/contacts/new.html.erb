@@ -1,0 +1,40 @@
+<div class="ct contacts-container">
+	<%= content_tag :h1, Spree.t('contact_tools.contacts.title') %>
+	
+	<div class="form-container">
+		<div class="instructions">
+			<%= content_tag :span, Spree.t('contact_tools.contacts.instructions') %>
+		</div>
+
+		<%= form_for @contact do |f| %>
+			<div class="field firstname">
+				<%= f.label "#{Spree.t('contact_tools.contacts.firstname')} *", class: 'required' %>
+				<%= f.text_field :firstname %>
+			</div>
+
+			<div class="field lastname">
+				<%= f.label "#{Spree.t('contact_tools.contacts.lastname')} *", class: 'required' %>
+				<%= f.text_field :lastname %>
+			</div>
+
+			<div class="field phone">
+				<%= f.label Spree.t('contact_tools.contacts.phone') %>
+				<%= f.text_field :phone %>
+			</div>
+
+			<div class="field email">
+				<%= f.label "#{Spree.t('contact_tools.contacts.email')} *", class: 'required' %>
+				<%= f.text_field :email %>
+			</div>
+
+			<div class="field message">
+				<%= f.label "#{Spree.t('contact_tools.contacts.message')} *", class: 'required' %>
+				<%= f.text_area :message %>
+			</div>
+
+			<div class="button">
+				<%= submit_tag Spree.t('contact_tools.contacts.send') %>
+			</div>
+		<% end %>
+	</div>
+</div>

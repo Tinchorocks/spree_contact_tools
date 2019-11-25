@@ -2,4 +2,23 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  spree:
+    contact_tools:
+      contacts:
+        title: Contact
+        instructions: Please, fill the next fields and press Send.
+        firstname: Name
+        lastname: Lastname
+        phone: Phone
+        email: Email
+        message: Your message
+        send: Send
+        success_msg: ¡Message sended succesfully! 
+        bach_home: Go back to home
+        email_subject: New contact
+        email_message: Message
+        email_user: User
+        email_email: Email
+        email_phone: Phone
+      newsletters:
+        title: Newsletter

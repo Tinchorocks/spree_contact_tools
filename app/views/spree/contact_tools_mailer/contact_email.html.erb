@@ -1,0 +1,49 @@
+<table class="row header">
+  <tr>
+    <td>
+      <table class="container">
+        <tr>
+          <td class="wrapper" style="text-align:center">
+            <p class="lede" style="font-size:24px;text-align:center">
+              <%= Spree.t('contact_tools.contacts.email_subject') %> <b><%= "#{@contact.firstname} #{@contact.lastname}" %></b> 
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color:#0075ad; padding:8px 5px; color:#ffffff; text-transform:uppercase">
+            <%= Spree.t('contact_tools.contacts.email_message') %>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:5px;">
+            <span style=" font-size:13px; color:#000000"><%= @contact.message %></span>
+          </td>
+        </tr>
+        <tr><td style="padding-bottom:5px;"><hr style="margin:0px 0; color:#ddd;background-color:#ddd; min-height:1px"></td></tr>
+        <tr>
+          <td style="padding-bottom:5px;">
+            <span style=" font-size:13px; color:#000000"><b><%= Spree.t('contact_tools.contacts.email_user') %>:</b> <%= "#{@contact.firstname} #{@contact.lastname}" %></span>
+          </td>
+        </tr>
+        <tr><td style="padding-bottom:5px;"><hr style="margin:0px 0; color:#ddd;background-color:#ddd; min-height:1px"></td></tr>
+        <tr>
+          <td style="padding-bottom:5px;">
+            <span style=" font-size:13px; color:#000000"><b><%= Spree.t('contact_tools.contacts.email_email') %>:</b> <%= "#{@contact.email}" %></span>
+          </td>
+        </tr>
+        <tr><td style="padding-bottom:5px;"><hr style="margin:0px 0; color:#ddd;background-color:#ddd; min-height:1px"></td></tr>
+        <tr>
+          <td style="padding-bottom:5px;">
+            <span style=" font-size:13px; color:#000000"><b><%= Spree.t('contact_tools.contacts.email_phone') %>:</b> <%= "#{@contact.phone}" %></span>
+          </td>
+        </tr>
+        <tr><td style="padding-bottom:5px;"><hr style="margin:0px 0; color:#ddd;background-color:#ddd; min-height:1px"></td></tr>
+      </table>
+     </td>
+    <td class="expander"></td>
+  </tr>
+</table>
+
+
+                
+ 

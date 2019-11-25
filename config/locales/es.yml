@@ -1,0 +1,24 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  spree:
+    contact_tools:
+      contacts:
+        title: Contacto
+        instructions: Por favor, complete los campos y presione Enviar.
+        firstname: Nombre
+        lastname: Apellido
+        phone: Teléfono
+        email: Email
+        message: Mensaje
+        send: Enviar
+        success_msg: ¡Mensaje enviado correctamente! 
+        bach_home: Volver al inicio
+        email_subject: Nuevo contacto
+        email_message: Mensaje
+        email_user: Nombre y apellido
+        email_email: Email
+        email_phone: Teléfono
+      newsletters:
+        title: Newsletter
