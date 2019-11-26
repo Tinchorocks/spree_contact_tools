@@ -1,3 +1,5 @@
-<%= tab :users, label: Spree.t('contact_tools.users.admin.users') %>
-<%= tab :contacts, label: Spree.t('contact_tools.contacts.admin.contacts') %>
-<%= tab :newsletters, label: Spree.t('contact_tools.newsletters.admin.newsletters') %>
+<ul id="sidebar-user" class="border-top bg-white nav nav-pills nav-stacked collapse show" data-hook="admin_user_sub_tabs">
+  <%= tab :users, label: Spree.t('contact_tools.users.admin.users') %>
+  <%= tab :contacts, label: Spree.t('contact_tools.contacts.admin.contacts') %>
+  <%= tab :newsletters, label: Spree.t('contact_tools.newsletters.admin.newsletters') %>
+</ul>
