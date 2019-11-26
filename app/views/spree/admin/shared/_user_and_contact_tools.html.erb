@@ -1,6 +1,3 @@
- 
-<% if can? :admin, Spree::User %>
-  <ul class="nav nav-sidebar border-bottom">
-    <%= main_menu_tree Spree.t('contact_tools.users.admin.users'), icon: 'user', url: '#sidebar-user', sub_menu: 'users' %>
-  </ul>
-<% end %>
+<ul class="nav nav-sidebar border-bottom">
+  <%= main_menu_tree Spree.t('contact_tools.users.admin.users'), icon: 'user', url: '#sidebar-user', sub_menu: 'users' %>
+</ul>

@@ -1,10 +1,9 @@
-<%= form_id = form_id || 'new_newsletter_form' %>
-<%= form_for Spree::Newsletter.new, html; { id: form_id, :onsubmit => "submitNewsletter(event, '##{form_id}');" } do |f| %>
-  <%= content_tag :div, class: "#{div_class || ''}" do %>
-    <%= f.text_field :email, class: input_class, placeholder: Spree.t('contact_tools.newsletters.template.placeholder') %> 
+<%= form_for Spree::Newsletter.new, html: { id: form_id = form_id || 'new_newsletter_form', :onsubmit => "submitNewsletter(event, '##{form_id}');" } do |f| %>
+  <%= content_tag :div, class: "#{div_class = div_class || ''}" do %>
+    <%= f.text_field :email, class: input_class = input_class || '', placeholder: Spree.t('contact_tools.newsletters.template.placeholder') %> 
 
-    <button type="submit" class="<%= button_class || '' %>">
-      <%= button_text || Spree.t('contact_tools.newsletters.template.button_text') %>
+    <button type="submit" class="<%= button_class = button_class || '' %>">
+      <%= button_text = button_text || Spree.t('contact_tools.newsletters.template.button_text') %>
     </button>
   <% end %>
 <% end %>
