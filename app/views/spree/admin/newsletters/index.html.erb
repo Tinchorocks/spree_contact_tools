@@ -1,0 +1,31 @@
+<% content_for :page_title do %>
+  <%= Spree.t('contact_tools.newsletters.admin.title') %>
+<% end %>
+
+<% content_for :page_actions do %>
+  <%= button_link_to Spree.t('contact_tools.newsletters.admin.export'), admin_newsletters_path(format: :csv), id: 'btn-export', class: 'btn-primary' %>
+<% end %>
+
+<% if @newsletters.any? %>
+  <table class='table sortable'>
+    <thead>
+      <tr data-hook='option_header'>
+        <th><%= Spree.t('contact_tools.newsletters.admin.email') %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @newsletters.each do |newsletter| %>
+        <tr class="spree_newsletter <%= cycle('odd', 'even')%>" id="<%= spree_dom_id newsletter %>" data-hook="option_row">
+          <td><%= newsletter.email %></td>
+          <td class="actions actions-2 text-right">
+            <%= link_to_delete(newsletter, no_text: true) %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <div class="alert alert-info no-objects-found">
+    <%= Spree.t(:no_resource_found, resource: <%= Spree.t('contact_tools.newsletters.admin.newsletters') %>) %>,
+  </div>
+<% end %>

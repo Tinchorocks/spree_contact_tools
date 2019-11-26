@@ -30,8 +30,20 @@ en:
           Lastname: Apellido
           Phone: Teléfono
           Message: Mensaje
+      newsletter: Newsletter
       newsletters:
         title: Newsletter
+        success_msg: ¡Mensaje enviado correctamente! 
+        id: Código
+        email: Email
+        admin:
+          newsletters: Newsletters
+          title: Newsletters
+          export: Exportar
+          email: Email
+        template:
+          placeholder: Ingresá tu email
+          button_text: Suscribite
       users: 
         admin:
           users: Usuarios

@@ -30,8 +30,20 @@ en:
           Lastname: Lastname
           Phone: Phone
           Message: Message
+      newsletter: Newsletter
       newsletters:
         title: Newsletter
+        success_msg: ¡Message sended succesfully! 
+        id: CODE
+        email: Email
+        admin:
+          newsletters: Newsletters
+          title: Newsletters
+          export: Export
+          email: Email
+        template:
+          placeholder: Email
+          button_text: Subscribe
       users: 
         admin:
           users: Users
