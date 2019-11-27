@@ -4,6 +4,8 @@ Configure the contact module from /admin/contact_settings. You can set mailer fr
   
 If you want your form to have Google Recaptcha, just fill the blank inputs on /admin/contact_settings with site_key and secret_key.  
 
+![Contact settings (Admin)](images/Admin_settings.png?raw=true "Contact settings (Admin)")  
+
 ## Newsletters
 
 The newsletter forms uses JavaScript to do and ajax call and returns a message if the user was correctly subscribed to the table spree_newsletters.
