@@ -20,7 +20,7 @@ English and Spanish translations support.
 
 1. Add this extension to your Gemfile with this line:
   ```ruby
-  gem 'spree_contact_tools', github: 'Tinchorocks/spree_contact_tools'
+  gem 'spree_contact_tools', github: 'Tinchorocks/spree_contact_tools', branch: '4-0-stable'
   ```
 
 2. Install the gem using Bundler:
