@@ -1,6 +1,6 @@
 # SpreeContactTools
 
-Provides Contact & Newsletter modules for Spree Ecommerce v4.0.
+Provides Contact & Newsletter modules with Recaptcha integration for Spree Ecommerce v4.0. 
 
 ## Installation
 
