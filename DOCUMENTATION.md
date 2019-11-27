@@ -1,6 +1,7 @@
 ## Contacts
 
-Configure the contact module from /admin/contact_settings. You can set mailer from, mailer to & mail subject. The form can be founded on /contact_us.  
+Configure the contact module from /admin/contact_settings. You can set mailer from, mailer to & mail subject.   
+The form can be founded on /contact_us.  
   
 If you want your form to have Google Recaptcha, just fill the blank inputs on /admin/contact_settings with site_key and secret_key.  
 

@@ -3,7 +3,7 @@
 Provides Contact & Newsletter modules with Recaptcha integration for Spree Ecommerce v4.0.  
 English and Spanish translations support.  
   
-Find examples images [here](IMAGES.md).   
+Find example images [here](IMAGES.md).   
 Available documentation [here](DOCUMENTATION.md).   
 
 ## Installation
