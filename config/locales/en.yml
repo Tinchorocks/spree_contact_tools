@@ -7,6 +7,7 @@ en:
       contact: Contact
       contacts:
         admin:
+          back_index: Go back to index
           contacts: Contacts
           email: Email
           export: Export
@@ -15,6 +16,18 @@ en:
           message: Message
           phone: Phone
           title: Contacts
+          setting:
+            contact: Contact form
+            mailer_from: Mail from
+            mailer_to: Mail to
+            subject: Subject
+            recaptcha: Recaptcha
+            recaptcha_instructions: Leave the fields blank if you do not want to use Recaptcha.
+            site_key: Site key
+            secret_key: Secret key
+            update: Update
+          settings: Settings
+          settings_success_msg: Settings updated succesfully
         back_home: Go back to home
         email: Email
         email_email: Email
@@ -27,6 +40,10 @@ en:
         lastname: Lastname
         message: Your message
         phone: Phone
+        recaptcha:
+          errors:
+            verification_failed: reCAPTCHA was incorrect, please try again.
+            recaptcha_unreachable: reCAPTCHA verification server error, please try again.
         recaptcha_validation_error: Please verify you've completed reCAPTCHA.
         send: Send
         success_msg: ¡Message sended succesfully! 

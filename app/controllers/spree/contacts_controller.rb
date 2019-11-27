@@ -1,3 +1,5 @@
+require 'recaptcha/rails'
+
 module Spree
   class ContactsController < Spree::StoreController
 		def new
@@ -6,7 +8,9 @@ module Spree
    
 		 def create
 			@contact = Spree::Contact.new(contact_params)
-			if verify_recaptcha(model: @contact)
+			verify = Recaptcha.configuration.site_key && Recaptcha.configuration.secret_key ? verify_recaptcha(model: @contact) : true
+
+			if verify   
 				if @contact.save
 					@contact.deliver_email
 					render :success
