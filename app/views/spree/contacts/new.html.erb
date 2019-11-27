@@ -32,6 +32,10 @@
 				<%= f.text_area :message %>
 			</div>
 
+			<div class="recaptcha-tags">
+				<%= recaptcha_tags %>
+			</div>
+
 			<div class="button">
 				<%= submit_tag Spree.t('contact_tools.contacts.send') %>
 			</div>

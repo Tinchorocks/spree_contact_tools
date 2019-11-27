@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'spree_core', spree_version
   s.add_dependency 'spree_backend', spree_version
   s.add_dependency 'spree_extension'
+  s.add_dependency 'recaptcha', '~> 4.9.0', require: 'recaptcha/rails'
 
   s.add_development_dependency 'appraisal'
   s.add_development_dependency 'awesome_print'
@@ -42,4 +43,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'webdrivers', '~> 4.0.0'
+
 end

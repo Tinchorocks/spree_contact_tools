@@ -6,44 +6,45 @@ en:
     contact_tools:
       contact: Contact
       contacts:
-        title: Contact
+        admin:
+          contacts: Contacts
+          email: Email
+          export: Export
+          firstname: Firstname
+          lastname: Lastname
+          message: Message
+          phone: Phone
+          title: Contacts
+        back_home: Go back to home
+        email: Email
+        email_email: Email
+        email_message: Message
+        email_phone: Phone
+        email_subject: New contact
+        email_user: User
         instructions: Please, fill the next fields and press Send.
         firstname: Name
         lastname: Lastname
-        phone: Phone
-        email: Email
         message: Your message
+        phone: Phone
+        recaptcha_validation_error: Please verify you've completed reCAPTCHA.
         send: Send
         success_msg: ¡Message sended succesfully! 
-        back_home: Go back to home
-        email_subject: New contact
-        email_message: Message
-        email_user: User
-        email_email: Email
-        email_phone: Phone
-        admin:
-          contacts: Contacts
-          title: Contacts
-          export: Export
-          email: Email
-          firstname: Firstname
-          Lastname: Lastname
-          Phone: Phone
-          Message: Message
+        title: Contact
       newsletter: Newsletter
       newsletters:
-        title: Newsletter
-        success_msg: ¡Message sended succesfully! 
-        id: CODE
-        email: Email
         admin:
+          email: Email
+          export: Export
           newsletters: Newsletters
           title: Newsletters
-          export: Export
-          email: Email
+        email: Email
+        id: CODE
+        success_msg: ¡Message sended succesfully! 
         template:
           placeholder: Email
           button_text: Subscribe
+        title: Newsletter
       users: 
         admin:
           users: Users
