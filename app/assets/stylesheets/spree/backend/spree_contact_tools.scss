@@ -1,0 +1,36 @@
+/*
+Placeholder manifest file.
+the installer will append this file to the app vendored assets here: 'vendor/assets/stylesheets/spree/backend/all.css'
+*/
+
+.ct {
+  &.settings-container {
+    width: 70%; 
+
+    b {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .instructions {
+      margin-bottom: 10px;
+      display: block;
+      font-style: italic;
+      font-size: 14px;
+    }
+
+    .button {
+      text-align: right;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &.settings-container {
+      width: 100%;
+
+      .button {
+        text-align: center;
+      }
+    }
+  }
+}

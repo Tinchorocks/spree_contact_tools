@@ -57,12 +57,21 @@ $borders: #ced4da;
       }
     }
 
+    .recaptcha-tags {
+      text-align: right;
+
+      .box {
+        display: inline-block;
+      }
+    }
+
     .button {
       text-align: right;
+      margin-bottom: 20px;
     }
 
     @media (max-width:767px) {
-      .button {
+      .button, .recaptcha-tags {
         text-align: center;
       }
     }

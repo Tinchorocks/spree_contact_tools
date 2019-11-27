@@ -6,44 +6,62 @@ es:
     contact_tools:
       contact: Contacto
       contacts:
-        title: Contacto
+        admin:
+          back_index: Volver al listado
+          contacts: Contactos
+          email: Email
+          export: Exportar
+          firstname: Nombre
+          lastname: Apellido
+          message: Mensaje
+          phone: Teléfono
+          title: Contactos
+          setting:
+            contact: Formulario de contacto
+            mailer_from: Mail que envía
+            mailer_to: Mail que recibe
+            subject: Asunto
+            recaptcha: Validación Recaptcha
+            recaptcha_instructions: Deje los campos en blanco si no desea usar Recaptcha.
+            site_key: Clave sitio
+            secret_key: Clave secreta
+            update: Actualizar
+          settings: Configuraciones
+          settings_success_msg: Configuración actualizada
+        back_home: Volver al inicio
+        email: Email
+        email_email: Email
+        email_message: Mensaje
+        email_phone: Teléfono
+        email_subject: Nuevo contacto
+        email_user: Nombre y apellido
         instructions: Por favor, complete los campos y presione Enviar.
         firstname: Nombre
         lastname: Apellido
-        phone: Teléfono
-        email: Email
         message: Mensaje
+        phone: Teléfono
+        recaptcha:
+          errors:
+            verification_failed: El reCAPTCHA fue incorrecto, intente nuevamente.
+            recaptcha_unreachable: Falla de servidor en la verificación de reCAPTCHA, por favor intente nuevamente.
+        recaptcha_validation_error: Asegúrese de haber completado la verificación reCAPTCHA.
         send: Enviar
         success_msg: ¡Mensaje enviado correctamente! 
-        back_home: Volver al inicio
-        email_subject: Nuevo contacto
-        email_message: Mensaje
-        email_user: Nombre y apellido
-        email_email: Email
-        email_phone: Teléfono
-        admin:
-          contacts: Contactos
-          title: Contactos
-          export: Exportar
-          email: Email
-          firstname: Nombre
-          Lastname: Apellido
-          Phone: Teléfono
-          Message: Mensaje
+        title: Contacto
       newsletter: Newsletter
       newsletters:
-        title: Newsletter
-        success_msg: ¡Mensaje enviado correctamente! 
-        id: Código
-        email: Email
         admin:
           newsletters: Newsletters
           title: Newsletters
           export: Exportar
           email: Email
+        email: Email
+        id: Código
+        success_msg: ¡Mensaje enviado correctamente! 
         template:
-          placeholder: Ingresá tu email
           button_text: Suscribite
+          placeholder: Ingresá tu email
+        title: Newsletter
       users: 
         admin:
           users: Usuarios

@@ -1,3 +1,5 @@
+require 'recaptcha/rails'
+
 module Spree
   module Admin
     class ContactsController < ResourceController
@@ -8,39 +10,21 @@ module Spree
         end
       end
 
-      def show
-        @contact = Spree::Contact.find(params[:id])
-      end
-
-      def new
-        @contact = Spree::Contact.new
-      end
-
-      def create
-        @contact = Spree::Contact.new(contact_params)
-        if @contact.save
-          redirect_to :index
-        else
-          render :new
-        end
-      end
-
-      def edit
-        @contact = Spree::Contact.find(params[:id])
-      end
-
-      def update
-        @contact = Spree::Contact.find(params[:id])
-        if @contact.update_attributes(contact_params)
-          redirect_to :show, id: @contact
-        else
-          render :edit
-        end
-      end
-
       def delete
         Spree::Contact.find(params[:id]).destroy
         redirect_to :index
+      end
+
+      def settings; end
+
+      def update_settings
+        Spree::ContactTools.mailer_from = params[:mailer_from]
+        Spree::ContactTools.mailer_to = params[:mailer_to]
+        Spree::ContactTools.subject = params[:subject] 
+        Recaptcha.configuration.site_key = params[:site_key]
+        Recaptcha.configuration.secret_key = params[:secret_key]
+        flash[:notice] = Spree.t('contact_tools.contacts.admin.settings_success_msg')
+        render :settings
       end
 
       def contact_params

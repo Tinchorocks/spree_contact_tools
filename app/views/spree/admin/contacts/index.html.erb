@@ -3,7 +3,8 @@
 <% end %>
 
 <% content_for :page_actions do %>
-	<%= button_link_to Spree.t('contact_tools.contacts.admin.export'), admin_contacts_path(format: :csv), id: 'btn-export', class: "btn-primary", icon: 'export' %>
+	<%= button_link_to Spree.t('contact_tools.contacts.admin.settings'), admin_contact_settings_path, class: 'btn-primary' %>
+	<%= button_link_to Spree.t('contact_tools.contacts.admin.export'), admin_contacts_path(format: :csv), id: 'btn-export', class: 'btn-success', icon: 'export' %>
 <% end %>
 
 <% if @contacts.any? %>

@@ -1,0 +1,51 @@
+<% content_for :page_title do %>
+  <%= Spree.t('contact_tools.contacts.admin.title') %> /
+  <%= Spree.t('contact_tools.contacts.admin.settings') %>
+<% end %>
+
+<% content_for :page_actions do %>
+  <%= button_link_to Spree.t('contact_tools.contacts.admin.back_index'), admin_contacts_path, class: 'btn-primary' %>
+<% end %>
+
+<div class="ct settings-container">
+  <%= form_tag admin_contact_settings_path, method: :post do %>
+    <%= content_tag :b, Spree.t('contact_tools.contacts.admin.setting.contact') %>
+
+    <div class="row">
+      <div class="col-md-4">
+        <%= content_tag :span, Spree.t('contact_tools.contacts.admin.setting.mailer_from') %>
+        <%= text_field_tag 'mailer_from', Spree::ContactTools.mailer_from, class: 'form-control' %>
+      </div>
+
+      <div class="col-md-4">
+        <%= content_tag :span, Spree.t('contact_tools.contacts.admin.setting.mailer_to') %>
+        <%= text_field_tag 'mailer_to', Spree::ContactTools.mailer_to, class: 'form-control' %>
+      </div>
+
+      <div class="col-md-4">
+        <%= content_tag :span, Spree.t('contact_tools.contacts.admin.setting.subject') %>
+        <%= text_field_tag 'subject', Spree::ContactTools.subject, class: 'form-control' %>
+      </div>
+    </div>
+
+    <%= content_tag :b, Spree.t('contact_tools.contacts.admin.setting.recaptcha') %>
+    
+    <%= content_tag :span, Spree.t('contact_tools.contacts.admin.setting.recaptcha_instructions'), class: 'instructions' %>
+
+    <div class="row">
+      <div class="col-md-6">
+        <%= content_tag :span, Spree.t('contact_tools.contacts.admin.setting.site_key')  %>
+        <%= text_field_tag 'site_key', Recaptcha.configuration.site_key, class: 'form-control' %>
+      </div>
+
+      <div class="col-md-6">
+        <%= content_tag :span, Spree.t('contact_tools.contacts.admin.setting.secret_key') %>
+        <%= text_field_tag 'secret_key', Recaptcha.configuration.secret_key, class: 'form-control' %>
+      </div>
+    </div>
+    
+    <div class="button">
+      <%= submit_tag Spree.t('contact_tools.contacts.admin.setting.update'), class: 'btn btn-success' %>
+    </div>
+  <% end %>
+</div>
